@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Listen Al-Quran Al-Kareem Audio with Urdu Translation online. Full Surah Recitation.">
+    <title>القرآن الکریم - Online Quran Audio & Urdu Translation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>القرآن الکریم (مع اردو ترجمہ و آڈیو)</h1>
+        <p class="developer-tag">Developer: Nawab Zada Hacker ☠️🙌</p>
+    </header>
+
+    <nav>
+        <a href="index.html">صفحہ اول</a>
+        <a href="quran.html" class="active">قرآن پاک</a>
+        <a href="allah-names.html">اللہ کے نام</a>
+        <a href="nabi-names.html">نبی کے نام</a>
+        <a href="namaz.html">نماز</a>
+        <a href="janaza.html">نمازِ جنازہ</a>
+        <a href="duas.html">دعائیں</a>
+    </nav>
+
+    <main class="container">
+        <div class="quran-controls">
+            <label for="surahSelect"><b>سورۃ منتخب کریں:</b></label><br><br>
+            <select id="surahSelect" onchange="loadSurah()">
+                <option value="">سورة منتخب کریں...</option>
+            </select>
+        </div>
+
+        <div id="audioPlayerContainer" style="margin: 20px 0; display:none;">
+            <p><b>آڈیو تلاوت (قاری مشاری بن راشد العفاسی):</b></p>
+            <audio id="quranAudio" controls style="width: 100%;"></audio>
+        </div>
+
+        <div id="quranContainer" class="quran-display">
+            <p>برائے مہربانی اوپر ڈراپ ڈاؤن سے سورۃ منتخب کریں۔</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 Developed by <strong>Nawab Zada Hacker ☠️🙌</strong></p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
