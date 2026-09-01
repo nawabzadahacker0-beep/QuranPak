@@ -3,64 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Asma-e-Nabi | 99 Names of Prophet Muhammad (SAW)</title>
+    <meta name="description" content="حضور اکرم ﷺ کے 99 اسمائے مبارکہ عربی، اردو اور معنی کے ساتھ۔ 99 Names of Prophet Muhammad SAW.">
+    <meta name="keywords" content="Asma e Nabi, 99 Names of Muhammad, Nabi ke naam, اسمائے نبی, Nawab Zada Hacker">
+    <meta name="author" content="Nawab Zada Hacker">
+    <title>نبی کریم ﷺ کے 99 نام - اسمائے مبارکہ | Nawab Zada Hacker</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;700&family=Amiri:wght@700&display=swap" rel="stylesheet">
     <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-        body {
-            background-color: #0d0d0d;
-            color: #00ff66;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            padding: 20px;
-        }
-        h1 {
-            text-align: center;
-            margin-bottom: 25px;
-            color: #00ff66;
-            text-shadow: 0 0 10px rgba(0, 255, 102, 0.5);
-        }
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            overflow-x: auto;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            background-color: #141414;
-            border: 1px solid #00ff66;
-            box-shadow: 0 0 15px rgba(0, 255, 102, 0.2);
-        }
-        th, td {
-            padding: 12px 15px;
-            text-align: right;
-            border-bottom: 1px solid #222;
-        }
-        th {
-            background-color: #00ff66;
-            color: #0d0d0d;
-            font-size: 1.1rem;
-        }
-        tr:hover {
-            background-color: #1a2e22;
-        }
-        .num {
-            text-align: center;
-            width: 50px;
-        }
-        .arabic {
-            font-size: 1.4rem;
-            font-weight: bold;
-        }
+        * {margin:0; padding:0; box-sizing:border-box;}
+        body {font-family: 'Noto Nastaliq Urdu', serif; background: #f4f6f5; color: #222; direction: rtl;}
+        header {background: linear-gradient(135deg, #7c2d12, #dc2626); color: white; text-align: center; padding: 25px 10px;}
+        header h1 {font-size: 28px;}
+        nav {background: #fff; display: flex; justify-content: center; flex-wrap: wrap; gap: 12px; padding: 12px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); position: sticky; top: 0;}
+        nav a {text-decoration: none; color: #7c2d12; font-weight: 700; padding: 8px 15px; border-radius: 8px;}
+        nav a:hover, nav a.active {background: #7c2d12; color: white;}
+        .container {max-width: 950px; margin: 20px auto; padding: 20px;}
+        .about-box {background: white; padding: 20px; border-radius: 12px; margin-bottom: 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);}
+        table {width: 100%; border-collapse: collapse; background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.1);}
+        th {background: #7c2d12; color: white; padding: 15px; text-align: center;}
+        td {padding: 12px; border-bottom: 1px solid #ddd; text-align: right;}
+        tr:hover {background: #fef2f2;}
+        .num {text-align: center; width: 60px; font-weight: bold;}
+        .arabic {font-family: 'Amiri', serif; font-size: 22px; text-align: center; color: #7c2d12;}
+        footer {background: #7c2d12; color: white; text-align: center; padding: 15px; margin-top: 30px;}
     </style>
 </head>
 <body>
-
-    <div class="container">
-        <h1>أسماء النبي ﷺ (حضور اکرم ﷺ کے 99 اسمائے مبارکہ اور معانی)</h1>
+    <header><h1>أسماء النبي ﷺ - نبی کریم ﷺ کے 99 نام</h1></header>
+    <nav>
+        <a href="index.html">صفحہ اول</a>
+        <a href="allah-names.html">اللہ کے نام</a>
+        <a href="nabi-names.html" class="active">نبی کے نام</a>
+    </nav>
+    <main class="container">
+        <div class="about-box">
+            <h2>اسمائے نبی ﷺ کی برکت</h2>
+            <p>اللہ تعالی نے اپنے محبوب ﷺ کو بہت سے مبارک نام عطا فرمائے۔ ان ناموں کو پڑھنے سے محبت رسول ﷺ بڑھتی ہے۔ یہاں 99 اسمائے مبارکہ ان کے اردو معنی کے ساتھ دیے گئے ہیں۔</p>
+        </div>
         <table>
             <thead>
                 <tr>
@@ -70,10 +48,10 @@
                     <th>معنی</th>
                 </tr>
             </thead>
-            <tbody id="nabi-names">
-            </tbody>
+            <tbody id="nabi-names"></tbody>
         </table>
-    </div>
+    </main>
+    <footer><p>© 2026 Developed by <strong>Nawab Zada Hacker☠️🙌</strong></p></footer>
 
     <script>
         const nabiNamesData = [
@@ -84,18 +62,18 @@
             {n: 5, ar: "قَاسِمٌ", ur: "قاسم", m: "تقسیم کرنے والا"},
             {n: 6, ar: "عَاقِبٌ", ur: "عاقب", m: "سب کے بعد آنے والا"},
             {n: 7, ar: "فَاتِحٌ", ur: "فاتح", m: "فتح کرنے والا، راستہ کھولنے والا"},
-            {n: 8, ar: "خَاتَمٌ", ur: "خاتم", m: "انبیاء کا خاتمہ کرنے والا"},
+            {n: 8, ar: "خَاتَمٌ", ur: "خاتم", m: "انبیاء کا سلسلہ ختم کرنے والا"},
             {n: 9, ar: "حَاشِرٌ", ur: "حاشر", m: "لوگوں کو جمع کرنے والا"},
             {n: 10, ar: "مَاحِي", ur: "ماحی", m: "کفر کو مٹانے والا"},
             {n: 11, ar: "دَاعٍ", ur: "داعی", m: "اللہ کی طرف بلانے والا"},
             {n: 12, ar: "شَاهِدٌ", ur: "شاہد", m: "گواہی دینے والا"},
             {n: 13, ar: "بَشِيرٌ", ur: "بشیر", m: "خوشخبری دینے والا"},
-            {n: 14, ar: "نَذِيرٌ", ur: "نذیر", m: "ڈराने والا (ڈرانے کی نصیحت)"},
+            {n: 14, ar: "نَذِيرٌ", ur: "نذیر", m: "ڈرانے والا"},
             {n: 15, ar: "سِرَاجٌ مُنِيرٌ", ur: "سراج منیر", m: "روشن چراغ"},
             {n: 16, ar: "رَؤُوفٌ", ur: "رؤوف", m: "شفقت کرنے والا"},
             {n: 17, ar: "رَحِيمٌ", ur: "رحیم", m: "بہت مہربان"},
-            {n: 18, ar: "طٰهٰ", ur: "طٰہٰ", m: "قرآنی لقب (اے انسان)"},
-            {n: 19, ar: "يٰسٓ", ur: "یٰسین", m: "قرآنی لقب (اے سردار)"},
+            {n: 18, ar: "طٰهٰ", ur: "طٰہٰ", m: "قرآنی لقب"},
+            {n: 19, ar: "يٰسٓ", ur: "یٰسین", m: "قرآنی لقب"},
             {n: 20, ar: "مُدَّثِّرٌ", ur: "مدثر", m: "چادر اوڑھنے والا"},
             {n: 21, ar: "مُزَّمِّلٌ", ur: "مزمل", m: "کمبل میں لپٹنے والا"},
             {n: 22, ar: "نَبِيٌّ", ur: "نبی", m: "غیب کی خبریں دینے والا"},
@@ -106,7 +84,7 @@
             {n: 27, ar: "مُصْطَفَى", ur: "مصطفیٰ", m: "برگزیدہ اور چنا ہوا"},
             {n: 28, ar: "مُجْتَبَى", ur: "مجتبیٰ", m: "منتخب کیا گیا"},
             {n: 29, ar: "مُرْتَضَى", ur: "مرتضیٰ", m: "پسندیدہ"},
-            {n: 30, ar: "أَمِينٌ", ur: "امين", m: "امانت دار"},
+            {n: 30, ar: "أَمِينٌ", ur: "امین", m: "امانت دار"},
             {n: 31, ar: "صَادِقٌ", ur: "صادق", m: "سچا"},
             {n: 32, ar: "مُصَدِّقٌ", ur: "مصدق", m: "تصدیق کرنے والا"},
             {n: 33, ar: "عَالِمٌ", ur: "عالم", m: "علم رکھنے والا"},
@@ -121,7 +99,7 @@
             {n: 42, ar: "إِمَامٌ", ur: "امام", m: "پیشوا"},
             {n: 43, ar: "بُرْهَانٌ", ur: "برہان", m: "دلیل اور برہان"},
             {n: 44, ar: "حُجَّةٌ", ur: "حجت", m: "قاطع دلیل"},
-            {n: 45, ar: "مَكِينٌ", ur: "مکين", m: "عالی مرتبہ"},
+            {n: 45, ar: "مَكِينٌ", ur: "مکین", m: "عالی مرتبہ"},
             {n: 46, ar: "مُطَاعٌ", ur: "مطاع", m: "جس کی اطاعت کی جائے"},
             {n: 47, ar: "كَرِيمٌ", ur: "کریم", m: "سخی اور صاحب کرم"},
             {n: 48, ar: "مُكَرَّمٌ", ur: "مکرم", m: "عزت دیا گیا"},
@@ -131,7 +109,7 @@
             {n: 52, ar: "مُشَفَّعٌ", ur: "مشفع", m: "جس کی شفاعت قبول ہو"},
             {n: 53, ar: "مُقْتَصِدٌ", ur: "مقتصد", m: "میانہ روی اختیار کرنے والا"},
             {n: 54, ar: "مُقْتَدَى", ur: "مقتدیٰ", m: "پیروی کیا گیا"},
-            {n: 55, ar: "قَادِي", ur: "قادی", m: "راہنما"},
+            {n: 55, ar: "قَائِدٌ", ur: "قائد", m: "راہنما"},
             {n: 56, ar: "صَاحِبُ الْكَوْثَرِ", ur: "صاحب الکوثر", m: "حوض کوثر کے مالک"},
             {n: 57, ar: "صَاحِبُ المَقَامِ", ur: "صاحب المقام", m: "مقام محمود کے مالک"},
             {n: 58, ar: "صَاحِبُ التَّاجِ", ur: "صاحب التاج", m: "تاج والے"},
@@ -143,50 +121,51 @@
             {n: 64, ar: "صَاحِبُ الْفَضِيلَةِ", ur: "صاحب الفضیلة", m: "فضیلت کے مالک"},
             {n: 65, ar: "صَاحِبُ الإِزَارِ", ur: "صاحب الإزار", m: "تہبند والے"},
             {n: 66, ar: "رَحْمَةٌ لِلْعَالَمِينَ", ur: "رحمۃ للعالمین", m: "تمام جہانوں کے لیے رحمت"},
-            {n: 67, ar: "شَفِيعُ الأُمَمِ", ur: "شفیع الأمم", m: "امّتوں کی شفاعت کرنے والے"},
-            {n: 68, ar: "عَلَمُ الْهُدَى", ur: "علم الهدى", m: "ہدایت کا نشان"},
+            {n: 67, ar: "شَفِيعُ الأُمَمِ", ur: "شفیع الامم", m: "امّتوں کی شفاعت کرنے والے"},
+            {n: 68, ar: "عَلَمُ الْهُدَى", ur: "علم الہدیٰ", m: "ہدایت کا نشان"},
             {n: 69, ar: "غَوْثٌ", ur: "غوث", m: "فریاد رس"},
-            {n: 70, ar: "غَيِيثٌ", ur: "غیث", m: "بارانِ رحمت"},
-            {n: 71, ar: "مِصْبَاحٌ", ur: "مصباح", m: "چراغ"},
-            {n: 72, ar: "مُنَجٍّ", ur: "منجی", m: "نجات دینے والا"},
-            {n: 73, ar: "نَاصِرٌ", ur: "ناصر", m: "مددگار"},
-            {n: 74, ar: "مَنْصُورٌ", ur: "منصور", m: "مدد کیا گیا"},
-            {n: 75, ar: "نَبِيُّ الرَّحْمَةِ", ur: "نبی الرحمة", m: "رحمت والے نبی"},
-            {n: 76, ar: "نَبِيُّ التَّوْبَةِ", ur: "نبی التوبة", m: "توبہ کے نبی"},
-            {n: 77, ar: "نَبِيُّ المَلَاحِمِ", ur: "نبی الملاحم", m: "جہاد والے نبی"},
-            {n: 78, ar: "حَرِيصٌ عَلَيْكُمْ", ur: "حریص علیکم", m: "امت کی بھلائی کے خواشمند"},
-            {n: 79, ar: "مَعْلُومٌ", ur: "معلوم", m: "معروف و مشہور"},
-            {n: 80, ar: "شَهِيِرٌ", ur: "شہیر", m: "مشهور الشان"},
-            {n: 81, ar: "شَاهِدٌ", ur: "شاہد", m: "گواہ"},
-            {n: 82, ar: "عَفُوٌّ", ur: "عفو", m: "درگزر کرنے والے"},
-            {n: 83, ar: "عَطُوفٌ", ur: "عطوف", m: "نہایت مہربان"},
-            {n: 84, ar: "قَائِدُ الْغُرِّ الْمُحَجَّلِينَ", ur: "قائد الغر المحجلین", m: "روشن چہروں والوں کے قائد"},
-            {n: 85, ar: "خَلِيلُ الرَّحْمٰنِ", ur: "خلیل الرحمن", m: "رحمٰن کے دوست"},
-            {n: 86, ar: "کَفِيلٌ", ur: "کفیل", m: "ضامن"},
-            {n: 87, ar: "وَسِيلَةٌ", ur: "وسیله", m: "ذریعہ و وسیلہ"},
-            {n: 88, ar: "مُقَدَّمٌ", ur: "مقدم", m: "آگے رکھے گئے"},
-            {n: 89, ar: "عَزِيزٌ", ur: "عزیز", m: "باعزت و غالب"},
-            {n: 90, ar: "مَأْمُونٌ", ur: "مامون", m: "امانت دار، قابل اعتماد"},
-            {n: 91, ar: "مُطِيعٌ", ur: "مطیع", m: "اطاعت کرنے والا"},
-            {n: 92, ar: "أُمِّيٌّ", ur: "امی", m: "دنیاوی استاد کے بغیر (اللہ سے علم یافتہ)"},
-            {n: 93, ar: "مُعَلِّمٌ", ur: "معلم", m: "تعلیم دینے والا"},
-            {n: 94, ar: "نَاصِحٌ", ur: "ناصح", m: "خیرخواہ"},
-            {n: 95, ar: "وَاصِلٌ", ur: "واصل", m: "ملانے والا"},
-            {n: 96, ar: "طَاهِرٌ", ur: "طاہر", m: "پاکیزہ"},
-            {n: 97, ar: "مُطَهَّرٌ", ur: "طاہر و مطہر", m: "پاک کیا گیا"},
-            {n: 98, ar: "صَادِقُ الْأَمِينِ", ur: "صادق الامین", m: "سچا اور امانت دار"},
-            {n: 99, ar: "خَاتَمُ النَّبِيِّينَ", ur: "خاتم النبیین", m: "آخری نبی ﷺ"}
+            {n: 70, ar: "غَيْثٌ", ur: "غیث", m: "بارانِ رحمت"},
+            {n: 71, ar: "مَنْصُورٌ", ur: "منصور", m: "مدد کیا گیا"},
+            {n: 72, ar: "نَاصِرٌ", ur: "ناصر", m: "مددگار"},
+            {n: 73, ar: "مُصْلِحٌ", ur: "مصلح", m: "اصلاح فرمانے والا"},
+            {n: 74, ar: "وَاصِلٌ", ur: "واصل", m: "حق تک پہنچانے والا"},
+            {n: 75, ar: "مَوْصُولٌ", ur: "موصول", m: "اللہ سے ملا ہوا"},
+            {n: 76, ar: "سَابِقٌ", ur: "سابق", m: "سبقت لے جانے والا"},
+            {n: 77, ar: "هَادٍ", ur: "ہادی", m: "راہ راست دکھانے والا"},
+            {n: 78, ar: "مُهْدٍ", ur: "مہد", m: "تحفہ دینے والا"},
+            {n: 79, ar: "عَفُوٌّ", ur: "عفو", m: "معاف فرمانے والا"},
+            {n: 80, ar: "عَادِلٌ", ur: "عادل", m: "عدل و انصاف کرنے والا"},
+            {n: 81, ar: "طَاهِرٌ", ur: "طاہر", m: "پاک اور صاف"},
+            {n: 82, ar: "مُطَهَّرٌ", ur: "مطہر", m: "پاک کیا گیا"},
+            {n: 83, ar: "طَيِّبٌ", ur: "طیب", m: "پاکیزہ اور نفیس"},
+            {n: 84, ar: "خَلِيلُ الرَّحْمٰنِ", ur: "خلیل الرحمن", m: "رحمٰن کا گہرا دوست"},
+            {n: 85, ar: "بَرٌّ", ur: "بر", m: "نیکوکار اور سچا"},
+            {n: 86, ar: "قَوِيٌّ", ur: "قوی", m: "قوت اور طاقت والا"},
+            {n: 87, ar: "مَأْمُونٌ", ur: "مامون", m: "جس پر مکمل بھروسا کیا جائے"},
+            {n: 88, ar: "مُجَابٌ", ur: "مجاب", m: "جس کی دعا قبول ہو"},
+            {n: 89, ar: "نَاصِحٌ", ur: "ناصح", m: "خیرخواہی چاہنے والا"},
+            {n: 90, ar: "وَفِيٌّ", ur: "وفی", m: "وعدہ پورا کرنے والا"},
+            {n: 91, ar: "كَرِيمُ الطَّرَفَيْنِ", ur: "کریم الطرفین", m: "دونوں اطراف (ماں باپ) سے معزز"},
+            {n: 92, ar: "مُنْتَقِمٌ", ur: "منتقم", m: "باطل کو مٹانے والا"},
+            {n: 93, ar: "مُفَضَّلٌ", ur: "مفضل", m: "فضیلت دیا گیا"},
+            {n: 94, ar: "وَكِيلٌ", ur: "وکیل", m: "کارساز"},
+            {n: 95, ar: "كَفِيلٌ", ur: "کفیل", m: "ضامن"},
+            {n: 96, ar: "شَفِيقٌ", ur: "شفیق", m: "بے حد مہربان"},
+            {n: 97, ar: "أُمِّيٌّ", ur: "امی", m: "دنیاوی استاد کے بغیر (اللہ کا سکھایا ہوا)"},
+            {n: 98, ar: "مُجَلِّي", ur: "مجلی", m: "تاریکی کو دور کرنے والا"},
+            {n: 99, ar: "نِعْمَةُ اللهِ", ur: "نعمت اللہ", m: "اللہ کی نعمت"}
         ];
 
-        const nabiTableBody = document.getElementById('nabi-names');
+        const tableBody = document.getElementById("nabi-names");
         nabiNamesData.forEach(item => {
-            const row = `<tr>
+            const row = document.createElement("tr");
+            row.innerHTML = `
                 <td class="num">${item.n}</td>
                 <td class="arabic">${item.ar}</td>
                 <td>${item.ur}</td>
                 <td>${item.m}</td>
-            </tr>`;
-            nabiTableBody.innerHTML += row;
+            `;
+            tableBody.appendChild(row);
         });
     </script>
 </body>
