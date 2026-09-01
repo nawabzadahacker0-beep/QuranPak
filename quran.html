@@ -11,7 +11,7 @@
     <meta name="robots" content="index, follow">
     
     <meta property="og:title" content="القرآن الکریم - آسان اردو ترجمہ، مفہوم اور آڈیو تلاوت">
-    <meta property="og:description" content="مکمل 114 سورتیں، ہر آیت کا ترجمہ اور جامع مفہوم سنیں اور پڑھیں۔">
+    <meta property="og:description" content="مکمل 114 سورتیں، ہر آیت کا مکمل ترجمہ اور جامع مفہوم سنیں اور پڑھیں۔">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="ur_PK">
 
@@ -24,7 +24,7 @@
       "@context": "https://schema.org",
       "@type": "WebPage",
       "name": "القرآن الکریم مع اردو ترجمہ و مفہوم",
-      "description": "آن لائن قرآن پاک مع اردو ترجمہ، مفہوم اور آڈیو تلاوت",
+      "description": "آن لائن قرآن پاک مع مکمل اردو ترجمہ، مفہوم اور آڈیو تلاوت",
       "publisher": {
         "@type": "Organization",
         "name": "Nawab Zada Hacker"
@@ -39,7 +39,7 @@
             background: #f0f7f6;
             color: #222;
             direction: rtl;
-            line-height: 2;
+            line-height: 2.2;
         }
         header {
             background: linear-gradient(135deg, #0a4d3e, #088a7a);
@@ -136,6 +136,18 @@
         }
         .surah-header h3 {color: #0a4d3e; font-size: 26px;}
 
+        .bismillah-box {
+            text-align: center;
+            font-family: 'Amiri', serif;
+            font-size: 28px;
+            color: #0a4d3e;
+            background: #fdfaf3;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+            border: 1px dashed #088a7a;
+        }
+
         .ayah {
             margin-bottom: 30px;
             padding-bottom: 20px;
@@ -163,6 +175,7 @@
             text-align: right;
             margin-bottom: 15px;
             padding: 5px 10px;
+            word-wrap: break-word;
         }
         .urdu-translation {
             font-size: 17px;
@@ -172,6 +185,8 @@
             border-right: 4px solid #088a7a;
             border-radius: 6px;
             margin-bottom: 10px;
+            text-align: justify;
+            word-break: break-word;
         }
         .urdu-mafhoom {
             font-size: 16px;
@@ -180,6 +195,8 @@
             padding: 12px 16px;
             border-right: 4px solid #d97706;
             border-radius: 6px;
+            text-align: justify;
+            word-break: break-word;
         }
         .badge-tarjuma {color: #088a7a; font-weight: bold;}
         .badge-mafhoom {color: #d97706; font-weight: bold;}
@@ -230,7 +247,7 @@
 
     <header>
         <h1>القرآن الکریم (مع اردو ترجمہ، مفہوم و آڈیو)</h1>
-        <p class="developer-tag">Developer Nawab Zada Hacker ☠️🙌</p>
+        <p class="developer-tag">Developer: Nawab Zada Hacker ☠️🙌</p>
     </header>
 
     <nav>
@@ -246,7 +263,7 @@
     <main class="container">
         <article class="about-box">
             <h2>آن لائن قرآن پاک مع مستند اردو ترجمہ و تفصیلی مفہوم</h2>
-            <p>یہاں آپ مکمل 114 سورتیں عربی متن، آسان سلیس اردو ترجمہ (مولانا فتح محمد جالندھری)، ہر آیت کے تفصیلی مفہوم اور امامِ حرم و معروف قاری <strong>"مشاری بن راشد العفاسی"</strong> کی خوبصورت آڈیو تلاوت کے ساتھ سن اور پڑھ سکتے ہیں۔ ہمارا مقصد کلامِ الٰہی کا صحیح فہم اور نور ہر مسلمان تک پہنچانا ہے۔</p>
+            <p>یہاں آپ مکمل 114 سورتیں عربی متن، آسان سلیس اور مکمل اردو ترجمہ (مولانا فتح محمد جالندھری)، ہر آیت کے تفصیلی مفہوم اور امامِ حرم و معروف قاری <strong>"مشاری بن راشد العفاسی"</strong> کی خوبصورت آڈیو تلاوت کے ساتھ سن اور پڑھ سکتے ہیں۔</p>
         </article>
 
         <section class="quran-controls">
@@ -305,16 +322,16 @@ surahSelect.addEventListener('change', async function() {
         return;
     }
 
-    quranContainer.innerHTML = '<div class="loader">سورۃ مع ترجمہ و مفہوم لوڈ ہو رہی ہے... برائے مہربانی انتظار کریں ⏳</div>';
+    quranContainer.innerHTML = '<div class="loader">سورۃ مع مکمل ترجمہ و مفہوم لوڈ ہو رہی ہے... برائے مہربانی انتظار کریں ⏳</div>';
     audioContainer.style.display = 'block';
 
     audioPlayer.src = `https://cdn.islamic.network/quran/audio/128/ar.alafasy/${surahNum}.mp3`;
 
     try {
-        const response = await fetch(`https://api.alquran.cloud/v1/surah/${surahNum}/editions/quran-uthmani,ur.jalandhry,ur.maududi`);
+        const response = await fetch(`https://api.alquran.cloud/v1/surah/${surahNum}/editions/quran-uthmani,ur.jalandhry,ur.ahmedali`);
         const data = await response.json();
 
-        if(data.status === "OK") {
+        if(data.status === "OK" && data.data.length >= 3) {
             let arabicAyahs = data.data[0].ayahs;
             let urduTarjuma = data.data[1].ayahs;
             let urduMafhoom = data.data[2].ayahs;
@@ -324,18 +341,33 @@ surahSelect.addEventListener('change', async function() {
             let html = `
                 <div class="surah-header">
                     <h3>سورۃ ${surahName} (${surahs[surahNum-1]})</h3>
-                    <p style="margin-top:5px;">کل آیات: ${totalAyahs}</p>
+                    <p style="margin-top:5px; font-weight: bold;">کل آیات: ${totalAyahs}</p>
                 </div>
             `;
 
+            if(surahNum != 1 && surahNum != 9) {
+                html += `<div class="bismillah-box">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>`;
+            }
+
             arabicAyahs.forEach((ayah, index) => {
-                let tarjumaText = urduTarjuma[index] ? urduTarjuma[index].text : "ترجمہ دستیاب نہیں ہے";
-                let mafhoomText = urduMafhoom[index] ? urduMafhoom[index].text : "مفہوم دستیاب نہیں ہے";
+                let arabicText = ayah.text;
+
+                if (surahNum != 1 && surahNum != 9 && index === 0) {
+                    arabicText = arabicText.replace("بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ", "").trim();
+                }
+
+                let tarjumaText = (urduTarjuma[index] && urduTarjuma[index].text.trim() !== "") 
+                                    ? urduTarjuma[index].text.trim() 
+                                    : (urduMafhoom[index] ? urduMafhoom[index].text.trim() : "مکمل ترجمہ لوڈ ہو رہا ہے...");
+
+                let mafhoomText = (urduMafhoom[index] && urduMafhoom[index].text.trim() !== "") 
+                                    ? urduMafhoom[index].text.trim() 
+                                    : tarjumaText;
 
                 html += `
                 <div class="ayah">
                     <div class="ayah-number">${ayah.numberInSurah}</div>
-                    <div class="arabic-text">${ayah.text} ﴿${ayah.numberInSurah}﴾</div>
+                    <div class="arabic-text">${arabicText} ﴿${ayah.numberInSurah}﴾</div>
                     <div class="urdu-translation">
                         <span class="badge-tarjuma">اردو ترجمہ:</span> ${tarjumaText}
                     </div>
@@ -348,10 +380,10 @@ surahSelect.addEventListener('change', async function() {
 
             quranContainer.innerHTML = html;
         } else {
-            quranContainer.innerHTML = '<div class="error">Error try again...</div>';
+            quranContainer.innerHTML = '<div class="error">ڈیٹا حاصل کرنے میں دشواری ہوئی۔ دوبارہ منتخب کریں۔</div>';
         }
     } catch (error) {
-        quranContainer.innerHTML = '<div class="error">Internet connections please try again..۔</div>';
+        quranContainer.innerHTML = '<div class="error">انٹرنیٹ کنکشن درست نہیں ہے۔ دوبارہ کوشش کریں۔</div>';
     }
 });
 </script>
