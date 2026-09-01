@@ -5,12 +5,126 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Complete Namaz Guide in Urdu with Rakat details from Start to End.">
     <title>مکمل نماز کا طریقہ اور رکعات | Islamic Portal</title>
-    <link rel="stylesheet" href="style.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Noto Nastaliq Urdu', serif;
+            background: #f8f9fa;
+            color: #222;
+            line-height: 1.8;
+            direction: rtl;
+        }
+        header {
+            background: linear-gradient(135deg, #0d5c63, #44a08d);
+            color: white;
+            text-align: center;
+            padding: 25px 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+        header h1 {
+            font-size: 28px;
+            margin-bottom: 8px;
+        }
+        .developer-tag {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+        nav {
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            padding: 12px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        nav a {
+            text-decoration: none;
+            color: #0d5c63;
+            font-weight: 700;
+            padding: 8px 15px;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+        nav a:hover, nav a.active {
+            background: #0d5c63;
+            color: white;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #0d5c63;
+            text-align: center;
+            margin: 20px 0;
+            border-bottom: 2px solid #44a08d;
+            padding-bottom: 10px;
+        }
+        h3 {
+            color: #0d5c63;
+            margin-bottom: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            text-align: center;
+        }
+        table th {
+            background: #0d5c63;
+            color: white;
+            padding: 12px;
+        }
+        table td {
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        table tr:nth-child(even) {
+            background: #f2f2f2;
+        }
+        .content-box {
+            background: #e8f5f3;
+            border-right: 4px solid #0d5c63;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 8px;
+        }
+        .arabic {
+            font-size: 20px;
+            font-weight: 700;
+            color: #0a3d42;
+            margin: 8px 0;
+        }
+        hr {
+            margin: 25px 0;
+            border: none;
+            border-top: 2px dashed #ccc;
+        }
+        footer {
+            background: #0d5c63;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>مکمل نماز کا طریقہ اور رکعات کی تفصیل</h1>
-        <p class="developer-tag">Developer: Nawab Zada Hacker ☠️🙌</p>
+        <p class="developer-tag">Developer: Nawab Zada Official ☠️🙌</p>
     </header>
 
     <nav>
@@ -22,7 +136,7 @@
     </nav>
 
     <main class="container">
-        <h2>پہنجوں نمازوں کی رکعات کا جدول</h2>
+        <h2>پانچوں نمازوں کی رکعات کا جدول</h2>
         <table>
             <thead>
                 <tr>
@@ -45,34 +159,60 @@
 
         <hr>
 
-        <h2>شروعات سے آخر تک مکمل نماز</h2>
+        <h2>شروعات سے آخر تک مکمل نماز کا طریقہ</h2>
         
         <div class="content-box">
             <h3>1. نیت اور تکبیرِ تحریمہ</h3>
-            <p>قبلہ رخ ہو کر کھڑے ہوں اور نیت کریں۔ پھر دونوں ہاتھ کانوں تک اٹھا کر <b>"اللَّهُ أَكْبَرُ"</b> کہیں اور ناف کے نیچے ہاتھ باندھ لیں۔</p>
+            <p>قبلہ رخ ہو کر کھڑے ہوں اور دل میں نیت کریں۔ پھر دونوں ہاتھ کانوں تک اٹھا کر <b>"اللَّهُ أَكْبَرُ"</b> کہیں اور ناف کے نیچے ہاتھ باندھ لیں۔</p>
         </div>
 
         <div class="content-box">
-            <h3>2. ثناء (ثناء پڑھنا)</h3>
+            <h3>2. ثناء</h3>
             <p class="arabic">سُبْحَانَكَ اللَّهُمَّ وَبِحَمْدِكَ وَتَبَارَكَ اسْمُكَ وَتَعَالَى جَدُّكَ وَلاَ إِلَهَ غَيْرُكَ</p>
-            <p><b>ترجمہ:</b> اے اللہ! ہم تیری پاکی بیان کرتے ہیں اور تیری تعریف کرتے ہیں، تیرا نام بابرکت ہے اور تیری شان بلند ہے۔</p>
+            <p><b>ترجمہ:</b> اے اللہ! ہم تیری پاکی بیان کرتے ہیں اور تیری تعریف کرتے ہیں، تیرا نام بابرکت ہے اور تیری شان بلند ہے۔ تیرے سوا کوئی معبود نہیں۔</p>
         </div>
 
         <div class="content-box">
-            <h3>3. تعوذ و تسمیہ اور سورۃ الفاتحہ</h3>
+            <h3>3. تعوذ، تسمیہ اور سورۃ الفاتحہ + کوئی سورت</h3>
             <p class="arabic">أَعُوذُ بِاللَّهِ مِنَ الشَّيْطَانِ الرَّجِيمِ • بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</p>
             <p class="arabic">الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ • الرَّحْمَنِ الرَّحِيمِ • مَالِكِ يَوْمِ الدِّينِ • إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ • اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ...</p>
+            <p>اس کے بعد کوئی سورت جیسے سورۃ الاخلاص پڑھیں۔</p>
         </div>
 
         <div class="content-box">
-            <h3>4. التحیات، درودِ ابراہیمی اور دعا</h3>
+            <h3>4. رکوع</h3>
+            <p>"اللَّهُ أَكْبَرُ" کہہ کر رکوع میں جائیں اور 3 بار <b>"سُبْحَانَ رَبِّيَ الْعَظِيمِ"</b> پڑھیں۔</p>
+        </div>
+
+        <div class="content-box">
+            <h3>5. قومہ</h3>
+            <p>رکوع سے کھڑے ہو کر <b>"سَمِعَ اللَّهُ لِمَنْ حَمِدَهُ، رَبَّنَا وَلَكَ الْحَمْدُ"</b> پڑھیں۔</p>
+        </div>
+
+        <div class="content-box">
+            <h3>6. سجدہ</h3>
+            <p>"اللَّهُ أَكْبَرُ" کہہ کر سجدے میں جائیں اور 3 بار <b>"سُبْحَانَ رَبِّيَ الْأَعْلَى"</b> پڑھیں۔</p>
+        </div>
+
+        <div class="content-box">
+            <h3>7. جلسہ اور دوسرا سجدہ</h3>
+            <p>سجدے سے اٹھ کر بیٹھیں اور <b>"رَبِّ اغْفِرْ لِي"</b> پڑھیں، پھر دوسرا سجدہ کریں۔</p>
+        </div>
+
+        <div class="content-box">
+            <h3>8. التحیات، درودِ ابراہیمی اور دعا</h3>
             <p class="arabic">التَّحِيَّاتُ لِلَّهِ وَالصَّلَوَاتُ وَالطَّيِّبَاتُ ، السَّلاَمُ عَلَيْكَ أَيُّهَا النَّبِيُّ وَرَحْمَةُ اللَّهِ وَبَرَكَاتُهُ...</p>
             <p class="arabic">اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ كَمَا صَلَّيْتَ عَلَى إِبْرَاهِيمَ وَعَلَى آلِ إِبْرَاهِيمَ إِنَّكَ حَمِيدٌ مَجِيدٌ...</p>
+        </div>
+
+        <div class="content-box">
+            <h3>9. سلام</h3>
+            <p>آخر میں دائیں اور بائیں <b>"السَّلاَمُ عَلَيْكُمْ وَرَحْمَةُ اللَّهِ"</b> کہہ کر سلام پھیریں۔</p>
         </div>
     </main>
 
     <footer>
-        <p>© 2026 Developed by <strong>Nawab Zada Hacker ☠️🙌</strong></p>
+        <p>© 2026 Developed by <strong>Nawab Zada Official ☠️🙌</strong></p>
     </footer>
 </body>
 </html>
